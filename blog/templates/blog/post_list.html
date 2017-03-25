@@ -3,7 +3,7 @@
             <title>HELLO USERNAME</title>
         </head>
         <body>
-
+            {% if posts_exist %}
             {% for post in posts %}
 
             <div>
@@ -13,6 +13,11 @@
             </div>
 
             {% endfor %}
+            {% else %}
+            <div>
+                <h2><a href="">Тут пока пусто :(</a></h2>
+            </div>
+            {% endif %}
 
         </body>
     </html>
