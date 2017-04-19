@@ -15,3 +15,13 @@ class StaticViewSitemap(sitemaps.Sitemap):
 
     def location(self, Post):
         return "/post/" + Post.pk + "/"
+    
+class StaticSitemap(sitemaps.Sitemap):
+    changefreq = "weekly"
+    priority = 0.5
+
+    def items(self):
+        return ['post_list']
+
+    def location(self, object):
+        return reverse(object)
