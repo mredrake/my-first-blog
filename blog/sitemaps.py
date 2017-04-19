@@ -14,7 +14,7 @@ class DinamicSitemap(sitemaps.Sitemap):
      #   return Post.published_date 
 
     def location(self, Post):
-        return "/post/" + Post.pk + "/"
+        return "/post/" + str(Post.pk) + "/"
     
 class StaticSitemap(sitemaps.Sitemap):
     changefreq = "weekly"
