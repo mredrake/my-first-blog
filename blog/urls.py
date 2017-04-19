@@ -1,11 +1,11 @@
 from django.conf.urls import url
 from . import views
 from django.contrib.sitemaps.views import sitemap
-from .sitemaps import StaticViewSitemap
+from .sitemaps import DinamicSitemap, StaticSitemap
 
 
 sitemaps = {
-    'static': StaticViewSitemap,
+    sitemaps = {'posts': DinamicSitemap, 'static': StaticSitemap}
 }
 
 
