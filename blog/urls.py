@@ -4,9 +4,8 @@ from django.contrib.sitemaps.views import sitemap
 from .sitemaps import DinamicSitemap, StaticSitemap
 
 
-sitemaps = {
-    sitemaps = {'articles': DinamicSitemap, 'static': StaticSitemap}
-}
+sitemaps = {'articles': DinamicSitemap, 'static': StaticSitemap}
+
 
 
 urlpatterns = [
