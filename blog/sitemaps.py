@@ -10,8 +10,8 @@ class DinamicSitemap(sitemaps.Sitemap):
     def items(self):
         return Post.objects.filter(published_date__lte=timezone.now())
     
-    def lastmod(self, Post):
-        return Post.published_date 
+    #def lastmod(self, Post):
+     #   return Post.published_date 
 
     def location(self, Post):
         return "/post/" + Post.pk + "/"
