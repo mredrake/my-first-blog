@@ -5,7 +5,7 @@ from .sitemaps import DinamicSitemap, StaticSitemap
 
 
 sitemaps = {
-    sitemaps = {'Post': DinamicSitemap, 'static': StaticSitemap}
+    sitemaps = {'articles': DinamicSitemap, 'static': StaticSitemap}
 }
 
 
