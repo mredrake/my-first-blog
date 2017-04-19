@@ -3,7 +3,7 @@ from django.core.urlresolvers import reverse
 from django.utils import timezone
 from .models import Post
 
-class StaticViewSitemap(sitemaps.Sitemap):
+class DinamicSitemap(sitemaps.Sitemap):
     priority = 0.5
     changefreq = 'daily'
     
