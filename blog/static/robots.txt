@@ -1,0 +1,4 @@
+User-agent:* 
+Disallow: /admin
+Host: mredrake.pythonanywhere.com 
+Sitemap: mredrake.pythonanywhere.com/sitemap.xml
