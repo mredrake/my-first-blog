@@ -14,4 +14,4 @@ def post_detail(request, pk):
     return render(request, 'blog/post_detail.html', {'post': post})
 
 def robots(request):
-    return render(request, 'static/robots.txt')
+    return render(request, 'blog/robots.txt')
