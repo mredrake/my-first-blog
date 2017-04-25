@@ -18,6 +18,7 @@ urlpatterns = [
    url(r'^/static/robots\.txt$', robots_view, name='robots_redir'),
    url(r'^robots\.txt$', views.robots, name='robots'),
    url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name = 'post_detail'),
+   url(r'^googled8586ec4af282d95\.html$', views.google_verify, name = 'google_verify'),
    url(r'^sitemap\.xml$', sitemap, {'sitemaps': sitemaps},
        name='django.contrib.sitemaps.views.sitemap')
 ]
