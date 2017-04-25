@@ -15,3 +15,6 @@ def post_detail(request, pk):
 
 def robots(request):
     return render(request, 'blog/robots.txt')
+
+def google_verify(request):
+    return render(request, 'blog/googled8586ec4af282d95.html')
